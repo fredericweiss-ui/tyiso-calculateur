@@ -1,0 +1,10 @@
+TY’ISO — Application HORS CONNEXION (nouvelle application séparée de Google Apps Script)
+
+1. Décompresser le ZIP.
+2. Publier tout le dossier sur un hébergement HTTPS statique (Netlify, GitHub Pages, ou votre site si vous avez un espace dédié). Les fichiers index.html, sw.js, manifest.webmanifest et icons/ doivent rester ensemble.
+3. Ouvrir l’URL HTTPS sur chaque téléphone ou ordinateur pendant que vous avez Internet.
+4. Sur Chrome/Edge, utiliser Installer l’application (ou Ajouter à l’écran d’accueil). Sur iPhone Safari, Partager > Sur l’écran d’accueil.
+5. Après la première visite réussie, l’application et les calculs peuvent fonctionner hors connexion. Tester en mode avion avant usage chantier.
+6. Les chantiers sont conservés sur CHAQUE appareil séparément, via le stockage du navigateur. Le bouton Enregistrer sous > JSON permet de les transférer et de les sauvegarder durablement. PDF via l’impression du navigateur (choisir Enregistrer au format PDF).
+
+IMPORTANT : Ne pas simplement ouvrir index.html en fichier local pour l’installation PWA ; service workers exigent HTTPS ou localhost. Google Drive ne sert pas directement de serveur HTTPS PWA. Aucune synchronisation automatique Google Drive dans cette version. Les données locales peuvent disparaître si les données du navigateur sont effacées ou si l’application est désinstallée. Les quantités sont estimatives.
